@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLayout"
+        android:layout_width="355dp"
+        android:layout_height="271dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="8dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#03711E"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback Box"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:layout_marginTop="7dp"/>
+<EditText
+    android:id="@+id/feedText"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="70dp"
+    android:hint="Enter feedback here...."
+    android:padding="7dp"
+    android:background="@drawable/edit_background"/>
+
+      <Button
+          android:id="@+id/cancel"
+          android:layout_width="90dp"
+          android:layout_height="50dp"
+          android:textStyle="bold"
+          android:layout_marginTop="190dp"
+          android:layout_marginLeft="40dp"
+          android:background="@drawable/edit_background"
+          android:text="cancel"
+          android:backgroundTint="#F85050"
+          />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="90dp"
+            android:textStyle="bold"
+            android:backgroundTint="#3F1DFF"
+            android:layout_height="50dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/edit_background"
+            android:layout_marginLeft="230dp"
+            android:text="Send"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
