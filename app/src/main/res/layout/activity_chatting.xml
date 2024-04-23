@@ -8,41 +8,77 @@
     android:layout_height="match_parent"
     tools:context=".Chatting">
 
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/chatMessage"-->
+<!--        android:layout_width="394dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/linearLayout"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:padding="5dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="13dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/message_box"-->
+<!--            android:layout_width="210dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="6dp"-->
+<!--            android:background="@drawable/message_send"-->
+<!--            android:hint="type the messages here..........  "-->
+<!--            android:padding="10dp" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/send"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="1dp"-->
+<!--            android:src="@drawable/send" />-->
+
+<!--    </LinearLayout>-->
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatMessage"
-        android:layout_width="394dp"
-        android:layout_height="605dp"
+        android:layout_width="391dp"
+        android:layout_height="751dp"
         android:layout_above="@+id/linearLayout"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="12dp"
-        android:padding="5dp" />
+        android:layout_marginTop="65dp"
 
+        />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="13dp"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_marginBottom="38dp"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/message_box"
-            android:layout_width="330dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginLeft="6dp"
+            android:id="@+id/message_box"
+            android:padding="10dp"
             android:background="@drawable/message_send"
-            android:hint="type the messages here...."
-            android:padding="10dp" />
-
+            android:hint="type the messages here..."
+            android:layout_weight="85"
+            />
         <ImageView
             android:id="@+id/send"
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="1dp"
-            android:src="@drawable/send" />
+            android:src="@drawable/send"
+            android:layout_weight="20"/>
 
     </LinearLayout>
-
-
 </RelativeLayout>

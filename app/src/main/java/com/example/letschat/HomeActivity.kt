@@ -47,8 +47,8 @@ class HomeActivity : AppCompatActivity() {
             val  feedback = feedText.text.toString()
             send.setOnClickListener {
                 val feedback = feedText.text.toString()
-//                sendFeedbackViaGmail(feedback)
-                sendFeedbackViaWhatsApp(feedback)
+                sendFeedbackViaGmail(feedback)
+//                sendFeedbackViaWhatsApp(feedback)
                 dialog.dismiss()
             }
             cancel.setOnClickListener {
@@ -111,15 +111,15 @@ class HomeActivity : AppCompatActivity() {
         }
         return true
     }
-//    private fun sendFeedbackViaGmail(feedback: String) {
-//        val emailIntent = Intent(Intent.ACTION_SEND)
-//        emailIntent.type = "text/plain"
-//        emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("rajsinghrajput@gmail.com"))
-//        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback")
-//        emailIntent.putExtra(Intent.EXTRA_TEXT, feedback)
-//        emailIntent.setPackage("com.google.android.gm") // Restrict to Gmail app
-//        startActivity(Intent.createChooser(emailIntent, "Send feedback via Gmail"))
-//    }
+    private fun sendFeedbackViaGmail(feedback: String) {
+        val emailIntent = Intent(Intent.ACTION_SEND)
+        emailIntent.type = "text/plain"
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("rajsinghrajput7002@gmail.com"))
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback")
+        emailIntent.putExtra(Intent.EXTRA_TEXT, feedback)
+        emailIntent.setPackage("com.google.android.gm") // Restrict to Gmail app
+        startActivity(Intent.createChooser(emailIntent, "Send feedback via Gmail"))
+    }
 
 //    private fun sendFeedbackViaWhatsApp(feedback: String) {
 //        val whatsappIntent = Intent(Intent.ACTION_SEND)
@@ -129,23 +129,23 @@ class HomeActivity : AppCompatActivity() {
 //        startActivity(Intent.createChooser(whatsappIntent, "Send feedback via WhatsApp"))
 //    }
 
-    private fun sendFeedbackViaWhatsApp(feedback: String) {
-        // Replace "your_phone_number" with your actual phone number
-        val phoneNumber = "+916204630259"
-
-        // Create a URI with the phone number
-        val uri = "https://wa.me/$phoneNumber"
-
-        // Create the intent
-        val whatsappIntent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
-
-        // Set the text of the message
-        whatsappIntent.putExtra(Intent.EXTRA_TEXT, feedback)
-
-        // Restrict the intent to the WhatsApp app
-        whatsappIntent.setPackage("com.whatsapp")
-
-        // Start the activity
-        startActivity(whatsappIntent)
-    }
+//    private fun sendFeedbackViaWhatsApp(feedback: String) {
+//        // Replace "your_phone_number" with your actual phone number
+//        val phoneNumber = "+916204630259"
+//
+//        // Create a URI with the phone number
+//        val uri = "https://wa.me/$phoneNumber"
+//
+//        // Create the intent
+//        val whatsappIntent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+//
+//        // Set the text of the message
+//        whatsappIntent.putExtra(Intent.EXTRA_TEXT, feedback)
+//
+//        // Restrict the intent to the WhatsApp app
+//        whatsappIntent.setPackage("com.whatsapp")
+//
+//        // Start the activity
+//        startActivity(whatsappIntent)
+//    }
 }

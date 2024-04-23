@@ -12,7 +12,7 @@
         android:id="@+id/recycler_name_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="54dp"
         tools:listitem="@layout/user_layout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -20,9 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="25dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="49dp"
         android:src="@drawable/feedback" />
 
 </RelativeLayout>

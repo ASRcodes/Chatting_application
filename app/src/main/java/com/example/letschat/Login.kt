@@ -16,6 +16,10 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        binding.singUp.setOnClickListener {
+            startActivity(Intent(this,SignUp::class.java))
+            finish()
+        }
         supportActionBar?.hide()
         mAuth = FirebaseAuth.getInstance()
 

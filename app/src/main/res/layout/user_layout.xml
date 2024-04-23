@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardLayout"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:outlineSpotShadowColor="@color/black"
         android:padding="8dp"
         app:cardCornerRadius="10dp"
@@ -18,7 +18,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/nameUser"
             android:text="Anubhav"
             android:textStyle="bold"
